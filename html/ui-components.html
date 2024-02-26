@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI components</title>
+    <link rel="stylesheet" type="text/css" href="/css/color.css">
+    <link rel="stylesheet" type="text/css" href="/css/core.css">
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/ui-styles.css">
+</head>
+
+<body>
+
+    <div id="buttons" class="col-md-12 col-xs-12 btn-sec">
+        <h1 class="txt-cntr">LOGIN FORM</h1>
+        <div class="btn-container pad-cls">
+            <div class="col-md-12 col-xs-12 cls-shadow cls-height txt-cntr" >
+                <h3>Sign in</h3>
+                <div class="field1">
+                <label for="username" autocomplete>EnterUsername:</label>
+                <input type="text" id="username" name="username" placeholder="user name">
+            </div>
+                <div class="field1">
+                <label for="username" autocomplete>Enter Password:</label>
+                <input type="password" id="username" name="password" placeholder="enter password">
+            </div>
+                <div class="field1">
+                <button class="btn-prop red-clr  ">sign In</button>
+                <button class="btn-prop red-clr  ">sign Up</button>
+                <div class="spinner">
+
+                </div>
+            </div> 
+            </div>
+
+
+            <div id="tabs" class="col-md-12 col-xs-12 cls-shadow tab-sec">
+                <h1 class="txt-cntr">Details</h1>
+                <div class="col-md-12 col-xs-12 pad-cls">
+                    <div class="tabs">
+                        <ul>
+                            <li class="link" id="tab1" onclick="openTab('Srinu')">Srinu</li>
+                            <li class="link" id="tab2" onclick="openTab('Naveen')">Naveen</li>
+                            <li class="link" id="tab3" onclick="openTab('Suresh')">Suresh</li>
+                        </ul>
+                    </div>
+                    <div id="Srinu" class="content">
+                        <h3>Name:Srinu</h3>
+                        <p>College:Swarnandra college of engineering and technology.</p>
+                        <p>From:Guntur</P>
+                        <div id="badg1">
+                            <p id="one1">1</p>
+
+                        </div>
+                    </div>
+                    <div id="Naveen" class="content">
+                        <h3>Name:Naveen</h3>
+                        <p>College:Swarnandra college of engineering and technology.</p>
+                        <p>From:Ongole</P>
+                        <div id="badg1">
+                            <p id="one1">2</p>
+                        </div>
+                    </div>
+                    <div id="Suresh" class="content">
+                        <h3>Name:Suresh</h3>
+                        <p>College:North west Mossouri state University.</p>
+                        <p>From:USA</p>
+                        <div id="badg1">
+                            <p id="one1">3</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="btn-pop" onclick="showPop()">(pop)Question</button>
+            <div class="overlay" id="show">
+                <div class="popu" id="showpop">
+                    <h2>Your name is Srinu?</h2>
+                    <button class="cls-btn" title="close" onclick="hidePop()"><i class="fa fa-times"
+                            aria-hidden="true"></i></button>
+                    <button class="yes-btn1" onclick="hidePop()" id="">Yes</button>
+                    <button class="no-btn2" onclick="hidePop()" id="">No</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <div id="coursoel" class="col-md-12 col-xs-12 acc-sec cls-shadow">
+        <h1 class="txt-cntr">Images</h1>
+        <div class="col-md-12 col-xs-12 pad-cls">
+            <div class="slideShow">
+                <img class="slides" src="/images/Angular.jpg" style="width:100%;">
+                <img class="slides" src="/images/javascript.jpg" style="width:100%;">
+                <img class="slides" src="/images/html.png" style="width:100%;">
+                <img class="slides" src="/images/css.jpg" style="width:100%;">
+                <button class="slide-btn left-btn" onclick="slideImages(-1)">&#10094;</button>
+                <button class="slide-btn right-btn" onclick="slideImages(1)">&#10095;</button>
+            </div>
+        </div>
+    </div>
+    <div id="Navbar" class="col-md-12 col-xs-12 cls-shadow">
+        <h1 class="txt-cntr">MENU</h1>
+        <div class="pad-cls">
+            <div class="">
+                <h3>Menu Bar</h3>
+                <nav class="">
+                    <ul class="har-nav">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Carries</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">details</a></li>
+
+                    </ul>
+                </nav>
+            </div>
+            <button class="accordion">srinu details</button>
+            <div class="acc-panel">
+                <h3>Name:Srinu</h3>
+                <p>College:Swarnandra college of engineering and technology.</p>
+                <p>From:Guntur</P>
+            </div>
+            <button class="accordion">Naveen details</button>
+            <div class="acc-panel">
+                <h3>Name:Naveen</h3>
+                <p>College:Swarnandra college of engineering and technology.</p>
+                <p>From:Ongole</P>
+            </div>
+            <button class="accordion">Suresh details</button>
+            <div class="acc-panel">
+                <h3>Name:Suresh</h3>
+                <p>College:North west Mossouri state University.</p>
+                <p>From:USA</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="Cards" class="col-md-12 col-xs-12 cls-shadow">
+        <h1 class="txt-cntr">PHOTO</h1>
+        <div class="">
+        <div class="background">
+          <div class="card">
+              <div class="color" id="blue">
+                  <img src="/images/Angular.jpg" width="332px" height="300px">
+              </div>
+              <h2>Photo1</h2>
+          </div>
+          
+        </div>
+  </div>
+     
+  
+</div>
+
+
+
+</body>
+<script src="/js/Uimain.js"></script>
+
+</html>
